@@ -1,8 +1,8 @@
 import streamlit as st
 import time # Importing the time module
 
-# st.title('Hello World!')
-# st.write('This is a simple Streamlit app.')
+st.title('Hello World!')
+st.write('This is a simple Streamlit app.')
 
 st.title("This is the app title")
 st.header("This is the header")
