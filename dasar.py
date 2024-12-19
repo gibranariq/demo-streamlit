@@ -45,35 +45,18 @@ filtered_category = category_data[category_data['TREG'] == treg_filter]
 neg_data = (
     filtered_category[filtered_category['Sentimen Feedback v2'] == 'Negatif']
     .nlargest(10, 'Count')
-    # .sort_values(by='Count', ascending=False)
 )
-# neg_data['Kategori Feedback'] = pd.Categorical(
-#     neg_data['Kategori Feedback'], 
-#     categories=neg_data['Kategori Feedback'], 
-#     ordered=True
-# )
 
 pos_data = (
     filtered_category[filtered_category['Sentimen Feedback v2'] == 'Positif']
     .nlargest(10, 'Count')
-    # .sort_values(by='Count', ascending=False)
 )
-# pos_data['Kategori Feedback'] = pd.Categorical(
-#     pos_data['Kategori Feedback'], 
-#     categories=pos_data['Kategori Feedback'], 
-#     ordered=True
-# )
+
 
 neu_data = (
     filtered_category[filtered_category['Sentimen Feedback v2'] == 'Netral']
     .nlargest(10, 'Count')
-    # .sort_values(by='Count', ascending=False)
 )
-# neu_data['Kategori Feedback'] = pd.Categorical(
-#     neu_data['Kategori Feedback'], 
-#     categories=neu_data['Kategori Feedback'], 
-#     ordered=True
-# )
 
 
 # Stacked bar chart
