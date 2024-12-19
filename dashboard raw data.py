@@ -167,11 +167,6 @@ category_data = (
 # Convert Month-Year to string for JSON serialization
 stacked_data['Month-Year'] = stacked_data['Month-Year'].apply(lambda x: x.strftime('%b %Y'))
 
-st.write(data.columns.tolist())  # Menampilkan semua kolom di Streamlit
-
-# Streamlit app layout
-
-st.title("Feedback Dashboard by TREG")
 
 # Daftar TREG yang akan divisualisasikan
 tregs = ['TREG-1', 'TREG-2', 'TREG-3', 'TREG-4', 'TREG-5']
